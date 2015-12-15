@@ -18,5 +18,8 @@
     "mongoose"
   ],
   "author": "Saad Rhoulam",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
 }

@@ -8,10 +8,12 @@ module.exports = function pluginSelfReference(schema, options) {
     }
 
     schema.pre('save', function(next) {
+        var self = this;
+
         // iterate, setting self-references where they are absent
         options.keys.forEach(function(k) {
-            if(this[k] !== this._id) {
-                this[k] = this._id;
+            if(!self[k]) {
+                self[k] = self._id;
             }
         });
 

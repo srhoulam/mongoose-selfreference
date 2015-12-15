@@ -8,8 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "null"
+    "url": "https://github.com/srhoulam/mongoose-selfreference"
   },
+  "bugs": {
+    "url": "https://github.com/srhoulam/mongoose-selfreference/issues"
+  },
+  "homepage": "https://github.com/srhoulam/mongoose-selfreference#readme",
   "keywords": [
     "mongoose"
   ],

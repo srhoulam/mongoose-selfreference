@@ -12,7 +12,7 @@ module.exports = function pluginSelfReference(schema, options) {
 
         // iterate, setting self-references where they are absent
         options.keys.forEach(function(k) {
-            if(!self[k]) {
+            if(self[k] === undefined) {
                 self[k] = self._id;
             }
         });
